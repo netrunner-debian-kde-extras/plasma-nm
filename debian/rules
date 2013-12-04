@@ -1,9 +1,5 @@
 #!/usr/bin/make -f
-
-# DEB_KDE_LINK_WITH_AS_NEEDED ?= yes
-
-override_dh_auto_configure:
-	dh_auto_configure -Skde -- -DCMAKE_USE_RELATIVE_PATHS=ON
+# -*- makefile -*-
 
 %:
 	dh $@ --parallel --with kde
