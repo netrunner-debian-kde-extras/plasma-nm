@@ -1,0 +1,2 @@
+# Private libraries
+plasma-nm: pkg-has-shlibs-control-file-but-no-actual-shared-libs
