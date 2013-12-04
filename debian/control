@@ -18,8 +18,8 @@ Build-Depends: debhelper (>= 9), cmake (>= 2.6.2), pkg-kde-tools (>= 0.5),
  pkg-config,
  mobile-broadband-provider-info
 Standards-Version: 3.9.5
-Vcs-Git: git://git.debian.org/git/pkg-kde/kde-extras/plasma-nm.git
-Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-extras/plasma-nm.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/plasma-nm.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/plasma-nm.git
 
 Package: plasma-nm
 Architecture: any
