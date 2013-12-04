@@ -1,5 +1,5 @@
-plasma-nm (0.9.3.2-1) UNRELEASED; urgency=low
+plasma-nm (0.9.3.2-1) experimental; urgency=low
 
   * Initial release. (Closes: #731375)
 
- -- Maximiliano Curia <maxy@debian.org>  Wed, 04 Dec 2013 16:20:21 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 04 Dec 2013 21:18:56 +0100
