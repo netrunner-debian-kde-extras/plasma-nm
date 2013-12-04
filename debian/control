@@ -6,11 +6,15 @@ Uploaders: Modestas Vainius <modax@debian.org>,
            Michael Biebl <biebl@debian.org>,
            Maximiliano Curia <maxy@debian.org>
 Build-Depends: debhelper (>= 9), cmake (>= 2.6.2), pkg-kde-tools (>= 0.5),
- libqt4-dev (>= 4:4.6.0), kdelibs5-dev (>= 4:4.9.0),
- kde-workspace-dev (>= 4:4.9.0),
- network-manager-dev (>= 0.9.8), libnm-util-dev (>= 0.9.8),
+ libqt4-dev (>= 4:4.6.0),
+ kdelibs5-dev (>= 4:4.9.0),
+ network-manager-dev (>= 0.9.8),
+ libmodemmanagerqt-dev (>= 0.5),
+ libnetworkmanagerqt-dev (>= 0.9.0.1),
+ libnm-util-dev (>= 0.9.8),
  libnm-glib-dev (>= 0.9.8),
  libopenconnect-dev (>= 4.04),
+ gettext,
  pkg-config,
  mobile-broadband-provider-info
 Standards-Version: 3.9.5
