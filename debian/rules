@@ -3,3 +3,6 @@
 
 %:
 	dh $@ --parallel --with kde
+
+override_dh_strip:
+	dh_strip --dbg-package=plasma-nm-dbg

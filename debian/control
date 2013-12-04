@@ -48,3 +48,15 @@ Depends: ${misc:Depends}, plasma-nm (>= ${binary:Version})
 Description: Transitional package for plasma-widget-networkmanagement
  This is a transitional package for plasma-widget-networkmanagement.
  It can safely be removed.
+
+Package: plasma-nm-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: ${misc:Depends}, plasma-nm (= ${binary:Version})
+Recommends: kdelibs5-dbg
+Suggests: kde-workspace-dbg
+Description: debugging symbols for KDE Network Management widget
+ This package provides debugging symbols for all binary packages built from the
+ plasma-nm source package. It's highly recommended to have this package
+ installed before reporting any crashes.
