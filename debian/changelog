@@ -1,8 +1,8 @@
-plasma-nm (0.9.3.2-2) UNRELEASED; urgency=medium
+plasma-nm (0.9.3.2-2) unstable; urgency=medium
 
   * Release to unstable.
 
- -- Maximiliano Curia <maxy@debian.org>  Fri, 14 Feb 2014 16:37:44 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 14 Feb 2014 16:59:02 +0100
 
 plasma-nm (0.9.3.2-1) experimental; urgency=low
 
