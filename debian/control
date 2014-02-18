@@ -5,18 +5,20 @@ Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Modestas Vainius <modax@debian.org>,
            Michael Biebl <biebl@debian.org>,
            Maximiliano Curia <maxy@debian.org>
-Build-Depends: debhelper (>= 9), cmake (>= 2.6.2), pkg-kde-tools (>= 0.5),
- libqt4-dev (>= 4:4.6.0),
- kdelibs5-dev (>= 4:4.9.0),
- network-manager-dev (>= 0.9.8),
- libmodemmanagerqt-dev (>= 0.5),
- libnetworkmanagerqt-dev (>= 0.9.0.1),
- libnm-util-dev (>= 0.9.8),
- libnm-glib-dev (>= 0.9.8),
- libopenconnect-dev (>= 4.04),
- gettext,
- pkg-config,
- mobile-broadband-provider-info
+Build-Depends: cmake (>= 2.6.2),
+               debhelper (>= 9),
+               gettext,
+               kdelibs5-dev (>= 4:4.9.0),
+               libmodemmanagerqt-dev (>= 0.5),
+               libnetworkmanagerqt-dev (>= 0.9.0.1),
+               libnm-glib-dev (>= 0.9.8),
+               libnm-util-dev (>= 0.9.8),
+               libopenconnect-dev (>= 4.04),
+               libqt4-dev (>= 4:4.6.0),
+               mobile-broadband-provider-info,
+               network-manager-dev (>= 0.9.8),
+               pkg-config,
+               pkg-kde-tools (>= 0.5)
 Standards-Version: 3.9.5
 Homepage: https://projects.kde.org/projects/playground/network/plasma-nm
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/plasma-nm.git
@@ -24,11 +26,15 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/plasma-nm.gi
 
 Package: plasma-nm
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, network-manager (>= 0.9.8),
- mobile-broadband-provider-info
+Depends: mobile-broadband-provider-info,
+         network-manager (>= 0.9.8),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Suggests: kde-workspace-bin, network-manager-openconnect
-Recommends: kwalletmanager, network-manager-vpnc, network-manager-openvpn,
- network-manager-pptp
+Recommends: kwalletmanager,
+            network-manager-openvpn,
+            network-manager-pptp,
+            network-manager-vpnc
 Replaces: knm-runtime, plasma-widget-networkmanagement (<< ${binary:Version})
 Breaks: knm-runtime, plasma-widget-networkmanagement (<< ${binary:Version})
 Description: Network Management widget for KDE Plasma workspaces
@@ -45,16 +51,16 @@ Package: plasma-widget-networkmanagement
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: ${misc:Depends}, plasma-nm (>= ${binary:Version})
-Description: Transitional package for plasma-widget-networkmanagement
- This is a transitional package for plasma-widget-networkmanagement.
+Depends: plasma-nm (>= ${binary:Version}), ${misc:Depends}
+Description: Transitional package for plasma-nm
+ This is a transitional package for plasma-nm.
  It can safely be removed.
 
 Package: plasma-nm-dbg
 Architecture: any
 Section: debug
 Priority: extra
-Depends: ${misc:Depends}, plasma-nm (= ${binary:Version})
+Depends: plasma-nm (= ${binary:Version}), ${misc:Depends}
 Recommends: kdelibs5-dbg
 Suggests: kde-workspace-dbg
 Description: debugging symbols for KDE Network Management widget
