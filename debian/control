@@ -67,3 +67,12 @@ Description: debugging symbols for KDE Network Management widget
  This package provides debugging symbols for all binary packages built from the
  plasma-nm source package. It's highly recommended to have this package
  installed before reporting any crashes.
+
+Package: plasma-widget-networkmanagement-dbg
+Architecture: all
+Section: oldlibs
+Priority: extra
+Depends: plasma-nm-dbg (>= ${binary:Version}), ${misc:Depends}
+Description: Transitional package for plasma-nm-dbg
+ This is a transitional package for plasma-nm-dbg.
+ It can safely be removed.
