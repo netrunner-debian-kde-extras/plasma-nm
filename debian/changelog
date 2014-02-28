@@ -1,11 +1,11 @@
-plasma-nm (0.9.3.2-3) UNRELEASED; urgency=medium
+plasma-nm (0.9.3.2-3) unstable; urgency=medium
 
   * Update transitional package description. Thanks to Jonas Smedegaard.
     (Closes: #739045)
   * Add plasma-widget-networkmanagement-dbg transitional package.
     (Closes: #740326)
 
- -- Maximiliano Curia <maxy@debian.org>  Tue, 18 Feb 2014 23:56:07 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 28 Feb 2014 23:51:09 +0100
 
 plasma-nm (0.9.3.2-2) unstable; urgency=medium
 
