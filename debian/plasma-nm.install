@@ -14,7 +14,7 @@ usr/lib/libplasmanetworkmanagement-editor.so
 usr/lib/libplasmanetworkmanagement-internal.so
 usr/share/applications/kde4/kde-nm-connection-editor.desktop
 usr/share/icons/oxygen/32x32/devices/network-defaultroute.png
-usr/share/kde4/apps/desktoptheme/default/icons/plasma-networkmanagement.svgz
+usr/share/kde4/apps/desktoptheme/default/icons/plasma-networkmanagement*.svgz
 usr/share/kde4/apps/kde-nm-connection-editor/
 usr/share/kde4/apps/networkmanagement/
 usr/share/kde4/apps/plasma/plasmoids/org.kde.networkmanagement/

@@ -3,6 +3,7 @@ plasma-nm (0.9.3.3-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Aesthetic change, further reduce rules file.
   * Update build dependencies.
+  * Update install files.
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 03 Mar 2014 12:51:49 +0100
 
