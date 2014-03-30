@@ -28,7 +28,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/plasma-nm.gi
 Package: plasma-nm
 Architecture: any
 Depends: mobile-broadband-provider-info,
-         network-manager (>= 0.9.8),
+         network-manager (>= 0.9.8.4),
          ${misc:Depends},
          ${shlibs:Depends}
 Suggests: kde-workspace-bin, network-manager-openconnect
