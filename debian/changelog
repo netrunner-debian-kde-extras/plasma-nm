@@ -1,10 +1,10 @@
-plasma-nm (0.9.3.3-3) UNRELEASED; urgency=medium
+plasma-nm (0.9.3.3-3) unstable; urgency=medium
 
   * Bump network-manager dependency in the binary package. (Closes: #743041)
   * New patch: upstream_fix_build_new_openconnnect (Closes: #742090)
     Thanks to Mike Miller
 
- -- Maximiliano Curia <maxy@debian.org>  Sun, 30 Mar 2014 19:57:56 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 28 Apr 2014 10:45:43 +0200
 
 plasma-nm (0.9.3.3-2) unstable; urgency=medium
 
