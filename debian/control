@@ -21,7 +21,7 @@ Build-Depends: cmake (>= 2.6.2),
                pkg-config,
                pkg-kde-tools (>= 0.5)
 Standards-Version: 3.9.5
-Homepage: https://projects.kde.org/projects/playground/network/plasma-nm
+Homepage: https://projects.kde.org/projects/kde/workspace/plasma-nm
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/plasma-nm.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/plasma-nm.git
 

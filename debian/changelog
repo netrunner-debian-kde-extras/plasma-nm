@@ -1,3 +1,9 @@
+plasma-nm (0.9.3.3-4) UNRELEASED; urgency=medium
+
+  * Update Homepage field. (Closes: #753279)
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 02 Jul 2014 11:27:15 +0200
+
 plasma-nm (0.9.3.3-3) unstable; urgency=medium
 
   * Bump network-manager dependency in the binary package. (Closes: #743041)
