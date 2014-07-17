@@ -36,8 +36,8 @@ Recommends: kwalletmanager,
             network-manager-openvpn,
             network-manager-pptp,
             network-manager-vpnc
-Replaces: knm-runtime, plasma-widget-networkmanagement (<< ${binary:Version})
-Breaks: knm-runtime, plasma-widget-networkmanagement (<< ${binary:Version})
+Replaces: knm-runtime, plasma-widget-networkmanagement (<< 0.9.3.2)
+Breaks: knm-runtime, plasma-widget-networkmanagement (<< 0.9.3.2)
 Description: Network Management widget for KDE Plasma workspaces
  This package contains the Network Management plasma widget which aims to
  provide a fully featured GUI for managing networks. Currently, the only
