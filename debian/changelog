@@ -1,7 +1,7 @@
 plasma-nm (0.9.3.3-4) UNRELEASED; urgency=medium
 
   * Update Homepage field. (Closes: #753279)
-  * Fix wrong replaces breaks versions.
+  * Fix wrong replaces breaks versions. (Closes: #754604, #754979)
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 02 Jul 2014 11:27:15 +0200
 
