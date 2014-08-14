@@ -1,11 +1,11 @@
-plasma-nm (0.9.3.4-1) UNRELEASED; urgency=medium
+plasma-nm (0.9.3.4-1~) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Update build dependencies.
   * Remove upstream patch: upstream_fix_build_new_openconnnect
   * Remove patch: disable_teamwidget
 
- -- Maximiliano Curia <maxy@debian.org>  Thu, 14 Aug 2014 14:47:22 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 14 Aug 2014 15:16:55 +0200
 
 plasma-nm (0.9.3.3-4) unstable; urgency=medium
 
