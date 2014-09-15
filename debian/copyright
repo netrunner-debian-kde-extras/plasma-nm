@@ -6,7 +6,8 @@ Files: *
 Copyright: 2010, Andrey Borzenkov <arvidjaar@gmail.com>
            2009, Dario Freddi <drf54321@gmail.com>
            2011, Ilia Kats <ilia-kats@gmx.net>
-           2010-2012, Lamarque V. Souza <lamarque@kde.org>
+           2013,2014, Jan Grulich <jgrulich@redhat.com>
+           2010-2014, Lamarque V. Souza <lamarque@kde.org>
            2013, Lukáš Tinkl <ltinkl@redhat.com>
            2010, Maurus Rohrer <maurus.rohrer@gmail.com>
            2009, Paul Marchouk <pmarchouk@gmail.com>
@@ -36,42 +37,9 @@ License: GPL-2, GPL-3 or later as approved by KDE e.V.
  complete text of the GNU General Public License version 3 can be found in
  "/usr/share/common-licenses/GPL-3".
 
-Files: declarative-plugins/applet/availabledevices.cpp
-       declarative-plugins/applet/availabledevices.h
-       declarative-plugins/applet/connectionicon.cpp
-       declarative-plugins/applet/connectionicon.h
-       declarative-plugins/applet/enabledconnections.cpp
-       declarative-plugins/applet/enabledconnections.h
-       declarative-plugins/applet/globalconfig.cpp
-       declarative-plugins/applet/globalconfig.h
-       declarative-plugins/applet/networkstatus.cpp
-       declarative-plugins/applet/networkstatus.h
-       declarative-plugins/applet/trafficmonitor.cpp
-       declarative-plugins/applet/trafficmonitor.h
-       declarative-plugins/debug.cpp
-       declarative-plugins/debug.h
-       declarative-plugins/enums.cpp
-       declarative-plugins/enums.h
-       declarative-plugins/handler.cpp
-       declarative-plugins/handler.h
-       declarative-plugins/model/model.cpp
-       declarative-plugins/model/model.h
-       declarative-plugins/model/modelitem.cpp
-       declarative-plugins/model/modelitem.h
-       declarative-plugins/model/modelitems.cpp
-       declarative-plugins/model/modelitems.h
-       declarative-plugins/model/monitor.cpp
-       declarative-plugins/model/monitor.h
-       declarative-plugins/model/sortmodel.cpp
-       declarative-plugins/model/sortmodel.h
-       declarative-plugins/qmlplugins.cpp
-       declarative-plugins/qmlplugins.h
+Files: applet/declarative/contents/ui/*.qml
        editor/connectioneditor.cpp
        editor/connectioneditor.h
-       editor/connectionitem.cpp
-       editor/connectionitem.h
-       editor/connectiontypeitem.cpp
-       editor/connectiontypeitem.h
        editor/main.cpp
        kded/bluetoothmonitor.cpp
        kded/bluetoothmonitor.h
@@ -83,56 +51,88 @@ Files: declarative-plugins/applet/availabledevices.cpp
        kded/passworddialog.h
        kded/secretagent.cpp
        kded/secretagent.h
-       lib/bssidcombobox.cpp
-       lib/bssidcombobox.h
-       lib/editor/bondwidget.cpp
-       lib/editor/bondwidget.h
-       lib/editor/bridgewidget.cpp
-       lib/editor/bridgewidget.h
-       lib/editor/btwidget.cpp
-       lib/editor/btwidget.h
-       lib/editor/cdmawidget.cpp
-       lib/editor/cdmawidget.h
-       lib/editor/connectiondetaileditor.cpp
-       lib/editor/connectiondetaileditor.h
-       lib/editor/connectionwidget.cpp
-       lib/editor/connectionwidget.h
-       lib/editor/gsmwidget.cpp
-       lib/editor/gsmwidget.h
-       lib/editor/infinibandwidget.cpp
-       lib/editor/infinibandwidget.h
-       lib/editor/ipv4widget.cpp
-       lib/editor/ipv4widget.h
-       lib/editor/ipv6widget.cpp
-       lib/editor/ipv6widget.h
-       lib/editor/pppoewidget.cpp
-       lib/editor/pppoewidget.h
-       lib/editor/pppwidget.cpp
-       lib/editor/pppwidget.h
-       lib/editor/security802-1x.cpp
-       lib/editor/security802-1x.h
-       lib/editor/ui/advancedpermissionswidget.cpp
-       lib/editor/ui/advancedpermissionswidget.h
-       lib/editor/vlanwidget.cpp
-       lib/editor/vlanwidget.h
-       lib/editor/wificonnectionwidget.cpp
-       lib/editor/wificonnectionwidget.h
-       lib/editor/wifisecurity.cpp
-       lib/editor/wifisecurity.h
-       lib/editor/wimaxwidget.cpp
-       lib/editor/wimaxwidget.h
-       lib/editor/wiredconnectionwidget.cpp
-       lib/editor/wiredconnectionwidget.h
-       lib/editor/wiredsecurity.cpp
-       lib/editor/wiredsecurity.h
-       lib/hwaddrcombobox.cpp
-       lib/hwaddrcombobox.h
-       lib/settingwidget.cpp
-       lib/settingwidget.h
-       lib/ssidcombobox.cpp
-       lib/ssidcombobox.h
-       lib/vpnuiplugin.cpp
-       lib/vpnuiplugin.h
+       libs/debug.cpp
+       libs/debug.h
+       libs/declarative/availabledevices.cpp
+       libs/declarative/availabledevices.h
+       libs/declarative/connectionicon.cpp
+       libs/declarative/connectionicon.h
+       libs/declarative/enabledconnections.cpp
+       libs/declarative/enabledconnections.h
+       libs/declarative/enums.cpp
+       libs/declarative/enums.h
+       libs/declarative/networkstatus.cpp
+       libs/declarative/networkstatus.h
+       libs/declarative/qmlplugins.cpp
+       libs/declarative/qmlplugins.h
+       libs/declarative/trafficmonitor.cpp
+       libs/declarative/trafficmonitor.h
+       libs/editor/connectiondetaileditor.cpp
+       libs/editor/connectiondetaileditor.h
+       libs/editor/settings/bondwidget.cpp
+       libs/editor/settings/bondwidget.h
+       libs/editor/settings/bridgewidget.cpp
+       libs/editor/settings/bridgewidget.h
+       libs/editor/settings/btwidget.cpp
+       libs/editor/settings/btwidget.h
+       libs/editor/settings/cdmawidget.cpp
+       libs/editor/settings/cdmawidget.h
+       libs/editor/settings/connectionwidget.cpp
+       libs/editor/settings/connectionwidget.h
+       libs/editor/settings/gsmwidget.cpp
+       libs/editor/settings/gsmwidget.h
+       libs/editor/settings/infinibandwidget.cpp
+       libs/editor/settings/infinibandwidget.h
+       libs/editor/settings/ipv4widget.cpp
+       libs/editor/settings/ipv4widget.h
+       libs/editor/settings/ipv6widget.cpp
+       libs/editor/settings/ipv6widget.h
+       libs/editor/settings/pppoewidget.cpp
+       libs/editor/settings/pppoewidget.h
+       libs/editor/settings/pppwidget.cpp
+       libs/editor/settings/pppwidget.h
+       libs/editor/settings/security802-1x.cpp
+       libs/editor/settings/security802-1x.h
+       libs/editor/settings/vlanwidget.cpp
+       libs/editor/settings/vlanwidget.h
+       libs/editor/settings/wificonnectionwidget.cpp
+       libs/editor/settings/wificonnectionwidget.h
+       libs/editor/settings/wifisecurity.cpp
+       libs/editor/settings/wifisecurity.h
+       libs/editor/settings/wimaxwidget.cpp
+       libs/editor/settings/wimaxwidget.h
+       libs/editor/settings/wiredconnectionwidget.cpp
+       libs/editor/settings/wiredconnectionwidget.h
+       libs/editor/settings/wiredsecurity.cpp
+       libs/editor/settings/wiredsecurity.h
+       libs/editor/vpnuiplugin.cpp
+       libs/editor/vpnuiplugin.h
+       libs/editor/widgets/advancedpermissionswidget.cpp
+       libs/editor/widgets/advancedpermissionswidget.h
+       libs/editor/widgets/bssidcombobox.cpp
+       libs/editor/widgets/bssidcombobox.h
+       libs/editor/widgets/hwaddrcombobox.cpp
+       libs/editor/widgets/hwaddrcombobox.h
+       libs/editor/widgets/settingwidget.cpp
+       libs/editor/widgets/settingwidget.h
+       libs/editor/widgets/ssidcombobox.cpp
+       libs/editor/widgets/ssidcombobox.h
+       libs/globalconfig.cpp
+       libs/globalconfig.h
+       libs/handler.cpp
+       libs/handler.h
+       libs/models/appletproxymodel.cpp
+       libs/models/appletproxymodel.h
+       libs/models/editoridentitymodel.cpp
+       libs/models/editoridentitymodel.h
+       libs/models/editorproxymodel.cpp
+       libs/models/editorproxymodel.h
+       libs/models/networkitemslist.cpp
+       libs/models/networkitemslist.h
+       libs/models/networkmodel.cpp
+       libs/models/networkmodel.h
+       libs/models/networkmodelitem.cpp
+       libs/models/networkmodelitem.h
        settings/details/detailkeyseditor.cpp
        settings/details/detailkeyseditor.h
        settings/details/detailkeyseditordesignfactory.cpp
@@ -170,9 +170,9 @@ Files: declarative-plugins/applet/availabledevices.cpp
 Copyright: 2013, Dan Vratil <dvratil@redhat.com>
            2013, Daniel Nicoletti <dantti12@gmail.com>
            2011-2013, Ilia Kats <jgrulich@redhat.com>
-           2013, Jan Grulich <jgrulich@redhat.com>
+           2013-2014, Jan Grulich <jgrulich@redhat.com>
            2010-2013, Lamarque V. Souza <lamarque@kde.org>
-           2013, Lukáš Tinkl <ltinkl@redhat.com>
+           2013-2014, Lukáš Tinkl <ltinkl@redhat.com>
            2010, Sebastian Kügler <sebas@kde.org>
            2008-2009, Will Stephenson <wstephenson@kde.org>
 License: LGPL-2.1 or LGPL-3 or later as approved by KDE e.V.
@@ -197,7 +197,8 @@ License: LGPL-2.1 or LGPL-3 or later as approved by KDE e.V.
  complete text of the GNU Lesser General Public License version 3 can be found
  in "/usr/share/common-licenses/LGPL-3".
 
-Files: vpn/l2tp/nm-l2tp-service.h
+Files: applet/declarative/contents/ui/ListItem.qml
+       vpn/l2tp/nm-l2tp-service.h
        vpn/openconnect/nm-openconnect-service.h
        vpn/openswan/nm-openswan-service.h
        vpn/openvpn/nm-openvpn-service.h
@@ -206,10 +207,60 @@ Files: vpn/l2tp/nm-l2tp-service.h
        vpn/vpnc/nm-vpnc-service.h
 Copyright: 2005-2008, Dan Williams <dcbw@redhat.com>
            2008-2009, Intel Corporation.
+           2010, Marco Martin <notmart@gmail.com>
            2007-2008, Novell, Inc
            2005-2012, Red Hat, Inc
            2005-2008, Tim Niemueller <tim@niemueller.de>
 License: GPL-2+
+
+Files: FindMobileBroadbandProviderInfo.cmake
+       vpn/openconnect/FindOpenConnect.cmake
+Copyright: 2011, Lamarque Souza <lamarque@kde.org>
+           2011, Ilia Kats <ilia-kats@gmx.net>
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. The name of the author may not be used to endorse or promote products
+    derived from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: libs/plasmanm_export.h
+Copyright: 2007, David Faure <faure@kde.org>
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Library General Public License as published by the Free
+ Software Foundation; either version 2 of the License, or (at your option) any
+ later version.
+ .
+ This library is distributed in the hope that it will be useful, but WITHOUT
+ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE.  See the GNU Library General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Library General Public License
+ along with this library; see the file COPYING.LIB.  If not, write to the Free
+ Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU Library General Public
+ License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
 
 Files: debian/*
 Copyright: 2013, Jonathan Riddell <jriddell@ubuntu.com>
