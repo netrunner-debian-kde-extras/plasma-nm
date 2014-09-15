@@ -4,11 +4,11 @@ Date:   Sun Sep 7 11:26:47 2014 +0200
 
     Fix build: replace Qt5 stuff
 
-diff --git a/kded/service.cpp b/kded/service.cpp
-index a27c148..3d30e1f 100644
---- a/kded/service.cpp
-+++ b/kded/service.cpp
-@@ -57,13 +57,13 @@ NetworkManagementService::NetworkManagementService(QObject * parent, const QVari
+Index: plasma-nm/kded/service.cpp
+===================================================================
+--- plasma-nm.orig/kded/service.cpp	2014-09-15 09:53:57.601414845 +0200
++++ plasma-nm/kded/service.cpp	2014-09-15 09:53:57.597415005 +0200
+@@ -57,13 +57,13 @@
  {
      Q_D(NetworkManagementService);
  
@@ -26,11 +26,11 @@ index a27c148..3d30e1f 100644
  }
  
  NetworkManagementService::~NetworkManagementService()
-diff --git a/libs/handler.cpp b/libs/handler.cpp
-index d3c1454..7a31787 100644
---- a/libs/handler.cpp
-+++ b/libs/handler.cpp
-@@ -53,10 +53,10 @@ Handler::Handler(QObject* parent)
+Index: plasma-nm/libs/handler.cpp
+===================================================================
+--- plasma-nm.orig/libs/handler.cpp	2014-09-15 09:53:57.601414845 +0200
++++ plasma-nm/libs/handler.cpp	2014-09-15 09:53:57.597415005 +0200
+@@ -52,10 +52,10 @@
      , m_tmpWimaxEnabled(NetworkManager::isWimaxEnabled())
      , m_tmpWirelessEnabled(NetworkManager::isWirelessEnabled())
      , m_tmpWwanEnabled(NetworkManager::isWwanEnabled())

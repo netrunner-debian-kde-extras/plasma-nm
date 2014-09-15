@@ -7,11 +7,11 @@ Date:   Sat Sep 6 17:54:00 2014 +0200
     BUG:338513
     REVIEW:120082
 
-diff --git a/kded/service.cpp b/kded/service.cpp
-index ec21b45..a27c148 100644
---- a/kded/service.cpp
-+++ b/kded/service.cpp
-@@ -57,19 +57,13 @@ NetworkManagementService::NetworkManagementService(QObject * parent, const QVari
+Index: plasma-nm/kded/service.cpp
+===================================================================
+--- plasma-nm.orig/kded/service.cpp	2014-09-15 09:53:43.409980948 +0200
++++ plasma-nm/kded/service.cpp	2014-09-15 09:53:43.369982542 +0200
+@@ -57,19 +57,13 @@
  {
      Q_D(NetworkManagementService);
  
@@ -35,7 +35,7 @@ index ec21b45..a27c148 100644
  }
  
  NetworkManagementService::~NetworkManagementService()
-@@ -77,17 +71,25 @@ NetworkManagementService::~NetworkManagementService()
+@@ -77,17 +71,25 @@
      delete d_ptr;
  }
  
@@ -70,11 +70,11 @@ index ec21b45..a27c148 100644
 +        d->bluetoothMonitor = new BluetoothMonitor(this);
 +    }
  }
-diff --git a/kded/service.h b/kded/service.h
-index ef626eb..08d90fd 100644
---- a/kded/service.h
-+++ b/kded/service.h
-@@ -35,18 +35,18 @@ class NetworkManagementServicePrivate;
+Index: plasma-nm/kded/service.h
+===================================================================
+--- plasma-nm.orig/kded/service.h	2014-09-15 09:53:43.409980948 +0200
++++ plasma-nm/kded/service.h	2014-09-15 09:53:43.369982542 +0200
+@@ -35,18 +35,18 @@
  
  class PLASMA_NM_EXPORT NetworkManagementService : public KDEDModule
  {
@@ -96,11 +96,11 @@ index ef626eb..08d90fd 100644
  };
  
  #endif // PLASMANM_KDED_SERVICE_H
-diff --git a/libs/handler.cpp b/libs/handler.cpp
-index 875ef03..cb8e71f 100644
---- a/libs/handler.cpp
-+++ b/libs/handler.cpp
-@@ -53,7 +53,10 @@ Handler::Handler(QObject* parent)
+Index: plasma-nm/libs/handler.cpp
+===================================================================
+--- plasma-nm.orig/libs/handler.cpp	2014-09-15 09:53:43.409980948 +0200
++++ plasma-nm/libs/handler.cpp	2014-09-15 09:53:43.369982542 +0200
+@@ -52,7 +52,10 @@
      , m_tmpWimaxEnabled(NetworkManager::isWimaxEnabled())
      , m_tmpWirelessEnabled(NetworkManager::isWirelessEnabled())
      , m_tmpWwanEnabled(NetworkManager::isWwanEnabled())
@@ -111,10 +111,10 @@ index 875ef03..cb8e71f 100644
  }
  
  Handler::~Handler()
-diff --git a/libs/handler.h b/libs/handler.h
-index 23a4628..d614e82 100644
---- a/libs/handler.h
-+++ b/libs/handler.h
+Index: plasma-nm/libs/handler.h
+===================================================================
+--- plasma-nm.orig/libs/handler.h	2014-09-15 09:53:43.409980948 +0200
++++ plasma-nm/libs/handler.h	2014-09-15 09:53:43.369982542 +0200
 @@ -21,6 +21,8 @@
  #ifndef PLASMA_NM_HANDLER_H
  #define PLASMA_NM_HANDLER_H
@@ -124,7 +124,7 @@ index 23a4628..d614e82 100644
  #include <NetworkManagerQt/Connection>
  
  #include "plasmanm_export.h"
-@@ -109,6 +111,7 @@ private:
+@@ -109,6 +111,7 @@
      QString m_tmpSpecificPath;
  
      bool isBtEnabled();

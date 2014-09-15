@@ -4,11 +4,11 @@ Date:   Sun Sep 7 11:23:18 2014 +0200
 
     Use proper kded service name
 
-diff --git a/libs/handler.cpp b/libs/handler.cpp
-index cb8e71f..d3c1454 100644
---- a/libs/handler.cpp
-+++ b/libs/handler.cpp
-@@ -53,7 +53,7 @@ Handler::Handler(QObject* parent)
+Index: plasma-nm/libs/handler.cpp
+===================================================================
+--- plasma-nm.orig/libs/handler.cpp	2014-09-15 09:53:54.745528768 +0200
++++ plasma-nm/libs/handler.cpp	2014-09-15 09:53:54.741528928 +0200
+@@ -52,7 +52,7 @@
      , m_tmpWimaxEnabled(NetworkManager::isWimaxEnabled())
      , m_tmpWirelessEnabled(NetworkManager::isWirelessEnabled())
      , m_tmpWwanEnabled(NetworkManager::isWwanEnabled())
