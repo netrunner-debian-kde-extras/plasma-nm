@@ -1,0 +1,19 @@
+commit c48c8321bca526787959c6ca5cb6d92c8b42882e
+Author: Jan Grulich <jgrulich@redhat.com>
+Date:   Sun Sep 7 11:23:18 2014 +0200
+
+    Use proper kded service name
+
+diff --git a/libs/handler.cpp b/libs/handler.cpp
+index cb8e71f..d3c1454 100644
+--- a/libs/handler.cpp
++++ b/libs/handler.cpp
+@@ -53,7 +53,7 @@ Handler::Handler(QObject* parent)
+     , m_tmpWimaxEnabled(NetworkManager::isWimaxEnabled())
+     , m_tmpWirelessEnabled(NetworkManager::isWirelessEnabled())
+     , m_tmpWwanEnabled(NetworkManager::isWwanEnabled())
+-    , m_agentIface(QStringLiteral("org.kde.kded5"), QStringLiteral("/modules/networkmanagement"),
++    , m_agentIface(QStringLiteral("org.kde.kded"), QStringLiteral("/modules/networkmanagement"),
+                    QStringLiteral("org.kde.plasmanetworkmanagement"))
+ {
+     m_agentIface.call(QStringLiteral("init"));

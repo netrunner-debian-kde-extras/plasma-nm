@@ -1,6 +1,9 @@
 plasma-nm (0.9.3.4-2~) UNRELEASED; urgency=medium
 
-  * 
+  * New patch: upstream-delay_the_notifications (Closes: #758863) Thanks
+    to Ralf Jung
+  * New patch: upstream-use_proper_kded
+  * New patch: upstream-fix_build_replace
 
  -- Maximiliano Curia <maxy@debian.org>  Sun, 14 Sep 2014 17:17:03 +0200
 
