@@ -1,3 +1,12 @@
+plasma-nm (0.9.3.6-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release. (Closes: #784154)
+    - Fixes a crash in the connection editor. (Closes: #777052)
+    - Drop all patches. They are applied upstream.
+
+ -- Felix Geyer <fgeyer@debian.org>  Mon, 18 May 2015 19:12:53 +0200
+
 plasma-nm (0.9.3.4-2) unstable; urgency=medium
 
   * New patch: upstream-delay_the_notifications (Closes: #758863) Thanks
